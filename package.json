@@ -1,0 +1,13 @@
+{
+  "name": "fitness-website",
+  "version": "1.0.0",
+  "description": "class-2",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Ted Senft",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
