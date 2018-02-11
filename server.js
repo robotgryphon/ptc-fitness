@@ -1,29 +1,29 @@
 const express = require("express");
 const path = require("path");
-const livereload = require('livereload');
+const scanner = require("portscanner");
 
-const httpPort = 3031;
+// Ports to try and use
+const portMin = 3030;
+const portMax = 3040;
+
+// Location of files
 const staticPath = path.join(__dirname, "public");
 
-startServer();
+scanner.findAPortNotInUse(portMin, portMax)
+    .then(port => startServer(port))
+    .catch(_ => console.log("No ports available to start HTTP server."));
 
-console.log("Creating livereload server.");
-var lreload = livereload.createServer();
-lreload.watch(staticPath);
-
-console.log(`Started at http://localhost:${httpPort}`);
-
-
-
-function startServer() {
+// Implementation of server
+function startServer(port) {
     console.log("Creating express server.");
     var app = express();
 
     console.log(`Hosting from ${staticPath}...`);
     app.use(express.static(staticPath));
     
-    
     // Start up express server
-    console.log(`Starting on port ${httpPort}...`);
-    app.listen(httpPort);
+    console.log(`Starting on port ${port}...`);
+    app.listen(port);
+
+    console.log(`Started at http://localhost:${port}`);
 }

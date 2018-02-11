@@ -6,11 +6,9 @@
   "keywords": [],
   "author": "Ted Senft",
   "license": "ISC",
-  "scripts": {
-    "dev": "node server.js"
-  },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "portscanner": "^2.1.1"
   },
   "devDependencies": {
     "livereload": "^0.6.3"

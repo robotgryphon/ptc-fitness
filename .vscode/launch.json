@@ -7,8 +7,21 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}\\server.js"
+            "name": "Launch (DEVELOP)",
+            "program": "${workspaceFolder}\\server-dev.js",
+            "env": {
+                "NODE_ENV": "development"
+            }
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch (PROD)",
+            "program": "${workspaceFolder}\\server.js",
+            "env": {
+                "NODE_ENV": "production"
+            }
         }
     ]
 }
