@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Fitness</title>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/styles.css">
     </head>
 
@@ -20,11 +20,13 @@
 
             <!-- Use this area to add links to other pages of the site -->
             <nav>
-                <a href="/">Home</a>                    &nbsp;&nbsp;
-                <a href="/about.html">About</a>         &nbsp;&nbsp;
-                <a href="/classes.html">Classes</a>     &nbsp;&nbsp;
-                <a href="/nutrition.html">Nutrition</a> &nbsp;&nbsp;    
-                <a href="/contact.html">Contact Us</a>  &nbsp;&nbsp;    
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/classes.html">Classes</a></li>
+                    <li><a href="/nutrition.html">Nutrition</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
             </nav>
 
             <!-- Main Area of the webpage; main content -->
@@ -32,15 +34,28 @@
                 <p>Welcome to Forward Fitness Club. Our mission is to help clients
                         meet their fitness and nutrition goals.</p>
                         
-                <p>If you have struggled with getting healthy and need the motivation
-                    and resources to make a healthy lifestyle change, contact us today.
-                    Our facility includes state-of-the-art equipment, convenient group
-                    training classes, and nutrition tips and information to keep you healthy.</p>
+                <div class="mobile">
+                    <h3>FREE One-Week Trial Membership!</h3>
+                    <p><a href="tel:8145559608">Call us Today to Get Started</a></p>
 
-                <p>We provide a FREE, one-week membership to experience the benefits of our
-                    equipment and facility. This one-week trial gives you complete access to
-                    our equipment, training classes, and nutrition planning. Contact us today
-                    to start your free trial!</p>
+                    <h4>Fitness Club Hours:</h4>
+                    <p>Monday - Thursday:   6:00am - 6:00pm</p>
+                    <p>Friday:              6:00am - 4:00pm</p>
+                    <p>Saturday:            8:00am - 6:00pm</p>
+                    <p>Sunday:              Closed</p>
+                </div>
+
+                <div class="desktop">
+                    <p>If you have struggled with getting healthy and need the motivation
+                        and resources to make a healthy lifestyle change, contact us today.
+                        Our facility includes state-of-the-art equipment, convenient group
+                        training classes, and nutrition tips and information to keep you healthy.</p>
+
+                    <p>We provide a FREE, one-week membership to experience the benefits of our
+                        equipment and facility. This one-week trial gives you complete access to
+                        our equipment, training classes, and nutrition planning. Contact us today
+                        to start your free trial!</p>
+                </div>
             </main>
 
             <footer>
@@ -48,12 +63,5 @@
                 <a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a>
             </footer>
         </div>
-        
-        <script> 
-            var source = (location.host || 'localhost').split(':')[0];
-            var script = document.createElement("script");
-            script.src = `http://${source}:35729/livereload.js`;
-            document.body.appendChild(script);
-        </script>
     </body>
 </html>
