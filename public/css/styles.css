@@ -1,0 +1,68 @@
+body {
+    background-color: #ffff99;
+    --shadow: 12px 12px 12px #404040;
+}
+
+
+div#container {
+    width: 80%;  
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+nav {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+
+main {
+    display: block;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1em;
+    margin: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+footer {
+    font-size: .7em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Equipment - About page */
+.equip {
+    float: left;
+    padding-right: 20px;
+}
+
+ul {
+    margin-bottom: 50px;
+    list-style-position: inside;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    padding-bottom: 20px;
+}
